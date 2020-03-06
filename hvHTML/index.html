@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Hoja de vida.php</title>
+</head>
+<body>
+    <form class="first-form" action="generate.php" method="POST" enctype="multipart/form-data"> <!-- FORMULARIO -->
+        <p class="apartado">Datos personales:</p>
+        <label for="txtNombre" class="labels-form">Ingrese el nombre</label>
+        <input name="txtNombre" type="text" class="input-form" placeholder="Nombre y apellido">
+        <label for="email" class="labels-form">Ingrese el correo</label>
+        <input name="email" type="email" class="input-form" placeholder="su@correo">
+        <label for="txtTelefono" class="labels-form">Ingrese el numero de celular</label>
+        <input name="txtTelefono" type="number" class="input-form">
+        <label for="opLocalidad" class="labels-form">Ingrese su localidad</label>
+        <select name="opLocalidad" class="input-form">
+            <option>1. Usaquén.</option>
+            <option>2. Chapinero.</option>
+            <option>3. Sante Fe.</option>
+            <option>4. San Cristóbal.</option>
+            <option>5. Usme.</option>
+            <option>6. Tunjuelito.</option>
+            <option>7. Bosa.</option>
+            <option>8. Kennedy.</option>
+            <option>9. Fontibón.</option>
+            <option>10. Engativa.</option>
+            <option>11. Suba.</option>
+            <option>12. Barrios Unidos.</option>
+            <option>13. Teusaquillo.</option>
+            <option>14. Los Mártires.</option>
+            <option>15. Antonio Nariño.</option>
+            <option>16. Puente Aranda.</option>
+            <option>17. La Candelaria.</option>
+            <option>18. Rafael Uribe Uribe.</option>
+            <option>19. Ciudad Bolivar.</option>
+            <option>20. Sumapaz.</option>
+
+        </select>
+        <p class="apartado">Descripción</p> <!-- DESCRIPCION-------------- -->
+        <label for="txtDescripcion" class="labels-form">Escriba una breve descripción de usted:</label>
+        <textarea name="txtDescripcion" class="input-form" type="text" placeholder="Describa sus intereses"></textarea><br>
+        <p class="apartado">Experiencia</p> <!-- EXPERIENCIA------------------------- -->
+        <label for="txtEmpresa" class="labels-form">Empresa</label>
+        <input name="txtEmpresa" type="text" class="input-form" placeholder="Empresa en la que laboró.">
+        <label for="txtCargo" class="labels-form">Cargo</label>
+        <input name="txtCargo" type="text" class="input-form" placeholder="Cargo que ocupó en la empresa">
+        <p class="apartado">Estudios</p> <!-- ESTUDIOS----------- -->
+        <label for="opEstudio" class="labels-form">Nivel de estudio máximo</label>
+        <select name="opEstudio" class="input-form">
+            <option>No tiene.</option>
+            <option>Primaria.</option>
+            <option>Bachiller.</option>
+            <option>Técnico.</option>
+            <option>Tecnólogo.</option>
+            <option>Profesional.</option>
+            <option>Posgrado.</option>
+        </select>
+        <label for="txtInstitucion" class="labels-form">Institución</label>
+        <input name="txtInstitucion" type="text" class="input-form" placeholder="Colegio, universidad o instituto">
+        <label for="txtTitulo" class="labels-form">Escriba el título que alcanzó</label>
+        <input name="txtTitulo" type="text" class="input-form" placeholder="Título alcanzado">
+        <input type="file" name="foto" class="input-form">
+        <input type="submit" value="Generar">
+    </form>
+</body>
+</html>
